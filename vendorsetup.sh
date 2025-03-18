@@ -22,8 +22,8 @@ echo 'Cloning common vendor tree'
 git clone https://github.com/AOSP-for-vili/vendor_xiaomi_sm8350-common.git -b lineage-22.2 vendor/xiaomi/sm8350-common
 
 # Meme camera
-echo 'Cloning meme camera'
-git clone https://github.com/AOSP-for-vili/vendor_xiaomi_camera.git vendor/xiaomi/camera
+# echo 'Cloning meme camera'
+# git clone https://github.com/AOSP-for-vili/vendor_xiaomi_camera.git vendor/xiaomi/camera
 
 # Firmware
 echo 'Cloning firmware'
