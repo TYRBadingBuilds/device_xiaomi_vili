@@ -10,6 +10,34 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="TyrBadingBuilds"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 888" \
+    RisingMaintainer="TyrBadingBuilds"
+
+RISING_MAINTAINER := TyrBadingBuilds
+
+# Extras
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := true
+
+# Lawnchair Launcher
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true 
+
+# GMS Build Flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+
+# Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Google Dialer and Messages
+TARGET_INCLUDE_GOOGLE_DIALER := true
+
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
