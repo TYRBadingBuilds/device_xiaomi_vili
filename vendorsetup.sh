@@ -24,8 +24,8 @@ echo 'Cloning common vendor tree'
 git clone https://github.com/TYRBadingBuilds/vendor_xiaomi_sm8350-common -b lineage-22.1 vendor/xiaomi/sm8350-common
   
 # Meme camera
-# echo 'Cloning meme camera'
-# git clone https://github.com/AOSP-for-vili/vendor_xiaomi_camera.git vendor/xiaomi/camera
+echo 'Cloning meme camera'
+git clone https://github.com/AOSP-for-vili/vendor_xiaomi_camera.git vendor/xiaomi/camera
   
 # Firmware
 echo 'Cloning firmware'
@@ -34,9 +34,9 @@ git clone https://gitlab.com/0mar99/vendor-xiaomi-vili-firmware.git vendor/xiaom
 # Leica patch
  
 # echo 'Adding Leica camera patch'
-# cd frameworks/base
-# get https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Leicamera/0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
-# patch -p1 <0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
-# cd ../..
+cd frameworks/base
+get https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Leicamera/0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
+patch -p1 <0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
+cd ../..
 
 echo 'delete vendorsetup.sh from device tree once this is done'
