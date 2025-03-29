@@ -27,7 +27,7 @@ git clone https://github.com/AOSP-for-vili/vendor_xiaomi_camera.git vendor/xiaom
 
 # Firmware
 echo 'Cloning firmware'
-git clone https://gitlab.com/0mar99/vendor-xiaomi-vili-firmware.git vendor/xiaomi/vili-firmware
+git clone https://gitlab.com/0mar99/vendor-xiaomi-vili-firmware.git -b test vendor/xiaomi/vili-firmware
 
 # Leica patch
 echo 'Adding Leica camera patch'
