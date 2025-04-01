@@ -32,8 +32,7 @@ echo 'Cloning firmware'
 git clone https://gitlab.com/0mar99/vendor-xiaomi-vili-firmware.git vendor/xiaomi/vili-firmware
   
 # Leica patch
- 
-# echo 'Adding Leica camera patch'
+ echo 'Adding Leica camera patch'
 cd frameworks/base
 get https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Leicamera/0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
 patch -p1 <0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
